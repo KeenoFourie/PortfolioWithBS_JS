@@ -1,0 +1,10 @@
+
+/* Logo */
+img[alt="Logo"] {
+    width: 5rem;
+}
+
+/* Body */
+body{
+    text-align: center;
+}
