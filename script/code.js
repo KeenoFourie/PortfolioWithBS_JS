@@ -4,9 +4,22 @@ let aboutContents = [
     "I am a hard-working person who is determined and passionate about web development. My passion drives me to be the best that I can possibly be. My passion was always there, from a young age I've loved technology and working with computer's. I am not afraid of a challnge no matter how big or small. I love what I do and this allows me to be happy with any obstruction I face. I am an open individual who treats everyone fairly and with honesty."
 ]
 
-// Loop through the contents
+// Skills
+let Skills = document.querySelector("section#Skills .skillList");
+let skillsContent = [
+    "Some of my soft skill's include communication, time management, problem-solving, teamwork skills, and some leadership skills aswell. My technical skills consist of the following:"
+]
+
+// Loop through the about contents
 aboutContents.forEach( (content)=>{
     about.innerHTML += `
+    <p class="lead">${content}</p>
+    `
+} )
+
+// Loop through the skills contents
+skillsContent.forEach( (content)=>{
+    Skills.innerHTML += `
     <p class="lead">${content}</p>
     `
 } )
@@ -52,3 +65,27 @@ education.forEach((data)=> {
     </div>
     `
 })
+
+
+// Skills icons with no sizing
+
+let htmlImage = document.createElement("img");
+htmlImage.src = "https://cdn-icons-png.flaticon.com/128/5968/5968267.png";
+let html = document.getElementById("htmlImg");
+html.appendChild(htmlImage);
+
+let bootstrapImage = document.createElement("img");
+bootstrapImage.src = "https://cdn-icons-png.flaticon.com/128/5968/5968672.png";
+let bootstrap = document.getElementById("bootstrapImg");
+bootstrap.appendChild(bootstrapImage);
+
+
+let javascriptImage = document.createElement("img");
+javascriptImage.src = "https://cdn-icons-png.flaticon.com/128/5968/5968292.png";
+let javascript = document.getElementById("javascriptImg");
+javascript.appendChild(javascriptImage);
+
+let cssImage = document.createElement("img");
+cssImage.src = "https://cdn-icons-png.flaticon.com/128/5968/5968242.png";
+let css = document.getElementById("cssImg");
+css.appendChild(cssImage);

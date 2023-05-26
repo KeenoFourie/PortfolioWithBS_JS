@@ -1,7 +1,19 @@
+/* Section spacing */
 
 /* Logo */
 img[alt="Logo"] {
     width: 5rem;
+    border-radius: 5rem;
+    border: 2px solid black;
+}
+
+/* Navigation Bar */
+#links {
+    font-size: large;
+}
+
+#links:hover {
+    color: grey;
 }
 
 /* Body */
@@ -12,11 +24,26 @@ body{
 :root{
     --primary: rgb(0, 0, 0);
     --secondary: white;
-    --alternative: hsla(0, 0%, 0%, 0.7);
+    --alternative: hsla(0, 0%, 0%, 0.337);
     --awesomeColor: rgb(0, 0, 0);
     --green: rgb(0, 0, 0);
     --mainBox-shadow: -8px -3px 23px 5px rgba(105,96,96,0.75);
 }
+.display-2 {
+    text-decoration: underline;
+}
+
+/* Home */
+#profile_image {
+    height: 20rem;
+    border: 2px solid black;
+    border-radius: 2rem;
+    padding: 0rem;
+}
+.intro {
+    margin-top: 2rem;
+}
+
 /* Education */
 .education {
     width: 40em;
@@ -24,7 +51,7 @@ body{
     padding: 10px;
 }
 .card {
-    border: 4px solid var(--green);
+    border: 2px solid var(--green);
     margin: 10px 0;
     border-radius: 20px;
     padding: 10px;
@@ -33,32 +60,77 @@ body{
 }  
 .card:nth-child(odd) {
     position: relative;
+    box-shadow: .5rem .5rem .5rem var(--awesomeColor);
 }
-/* .card:nth-child(odd)::after {
-    position: absolute;
-    top: -3em;
-    right: 0;
-    content: '';
-    width: 4px;
-    height: 45vh;
-    border-right: 2px solid var(--primary);
-} */
+
 .card:nth-child(even) {
-    box-shadow: .5vw .2vw .7vw var(--awesomeColor);
+    box-shadow: .5rem .5rem .5rem var(--awesomeColor);
     margin-left: auto;
     position: relative;
+}
+.card:nth-child(odd)::after {
+    position: absolute;
+    content: '';
+    top: 75px;
+    z-index: 20;
+    right: -1.5em;
+    width: 50px;
+    height: 50px;
+    background-color: var(--awesomeColor);
+    box-shadow: 10s .5vw 1vw rgba(90, 115, 132, 0.9);
 }
 .card:nth-child(even)::after {
     position: absolute;
     content: '';
-    top: 90px;
+    top: 75px;
     z-index: 20;
-    left: -2em;
+    left: -1.5em;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
     background-color: var(--awesomeColor);
     box-shadow: 10s .5vw 1vw rgba(90, 115, 132, 0.9);
+}
+
+/* Skills */
+/* Skills icons */
+#bootstrapImg {
+    border: 2px solid black;
+    margin: auto;
+    width: 35rem;
+    background-color: hsla(0, 0%, 0%, 0.337);
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+}
+
+#javascriptImg {
+    border: 2px solid black;
+    margin: auto;
+    width: 35rem;
+    background-color: hsla(0, 0%, 0%, 0.337);
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+}
+
+#htmlImg {
+    border: 2px solid black;
+    margin: auto;
+    width: 35rem;
+    background-color: hsla(0, 0%, 0%, 0.337);
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+}
+
+#cssImg {
+    border: 2px solid black;
+    margin: auto;
+    width: 35rem;
+    background-color: hsla(0, 0%, 0%, 0.337);
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
 }
 
 /* Media query */
